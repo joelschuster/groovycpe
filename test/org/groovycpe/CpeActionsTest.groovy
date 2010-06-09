@@ -67,7 +67,7 @@ public class CpeActionsTest extends TestCase{
 	void testSetParameterValues(){
 		def spv = new SetParameterValues(parameterList: 
 			new ParameterValueList(any: [
-			                             new ParameterValueStruct(name:'InternetGatewayDevice.DeviceInfo.ProvisioningCode', value:'ProvCode'),
+			                             new ParameterValueStruct(name:'InternetGatewayDevice.DeviceInfo.ProvisioningCode', value:'ProvCode2'),
 			                             new ParameterValueStruct(name:'InternetGatewayDevice.DeviceConfig.X_000E50_AutoSave', value:'false'),
 			                             ]))
 		SetParameterValuesResponse spvr = unwrap( cpeActions.doSetParameterValues( spv ) )
